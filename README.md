@@ -30,49 +30,60 @@ This is my internship project developed for ORIC MUET. The portal serves as a ce
 
 1. Clone the repository
 
+```bash
 git clone https://github.com/Ayeshajameel14/MUET-ORIC-PORTAL.git
+```
 
 2. Navigate to the project folder
 
+```bash
 cd MUET-ORIC-PORTAL
+```
 
 3. Install dependencies
 
+```bash
 npm install
+```
 
 4. Start the development server
 
+```bash
 npm run dev
+```
 
-5. Open your browser and visit http://localhost:5173
+5. Open your browser and visit `http://localhost:5173`
 
 ## Demo Credentials
 
-Email                          | Password      | Role
-admin@oric.muet.edu.pk         | Admin@123     | Director
-researcher@muet.edu.pk         | Research@123  | Researcher
-faculty@muet.edu.pk            | Faculty@123   | Faculty
+| Email | Password | Role |
+|-------|----------|------|
+| admin@oric.muet.edu.pk | Admin@123 | Director |
+| researcher@muet.edu.pk | Research@123 | Researcher |
+| faculty@muet.edu.pk | Faculty@123 | Faculty |
 
 ## Project Structure
 
+```
 MUET-ORIC-PORTAL/
 ├── src/
-│   ├── assets/          # ORIC Logo and static files
-│   ├── components/      # Sidebar, Topbar, Layout components
-│   ├── context/         # Authentication context
-│   ├── pages/           # All page components
+│   ├── assets/            # ORIC Logo and static files
+│   ├── components/        # Sidebar, Topbar, Layout components
+│   ├── context/           # Authentication context
+│   ├── pages/             # All page components
 │   │   ├── Login.jsx
 │   │   ├── Register.jsx
 │   │   ├── Dashboard.jsx
 │   │   ├── GrantsPage.jsx
 │   │   ├── CPDPage.jsx
 │   │   └── AnnouncementsPage.jsx
-│   ├── App.jsx          # Routes configuration
-│   ├── main.jsx         # Application entry point
-│   └── index.css        # Global styles
+│   ├── App.jsx            # Routes configuration
+│   ├── main.jsx           # Application entry point
+│   └── index.css          # Global styles
 ├── index.html
 ├── package.json
 └── vite.config.js
+```
 
 ## Author
 
@@ -85,7 +96,7 @@ Mehran University of Engineering & Technology, Jamshoro
 **Office of Research, Innovation & Commercialization (ORIC)**
 Mehran University of Engineering & Technology
 Jamshoro, Sindh, Pakistan
-https://oric.muet.edu.pk
+[https://oric.muet.edu.pk](https://oric.muet.edu.pk)
 
 ## License
 
