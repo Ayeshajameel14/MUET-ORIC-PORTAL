@@ -1,0 +1,87 @@
+.cpd-page { max-width: 1100px; }
+
+.cpd-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.cpd-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+
+.cpd-card:hover {
+  box-shadow: var(--shadow);
+  border-color: #b8c8e0;
+}
+
+.cpd-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cpd-card__category {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--navy-light);
+  background: rgba(26,74,138,0.07);
+  padding: 2px 8px;
+  border-radius: 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.cpd-card__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.35;
+}
+
+.cpd-card__desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.cpd-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cpd-card__meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+.cpd-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.cpd-card__fee {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--green);
+}
+
+@media (max-width: 600px) {
+  .cpd-grid { grid-template-columns: 1fr; }
+}
