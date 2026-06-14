@@ -6,15 +6,18 @@ import DashboardLayout from './components/DashboardLayout';
 
 import Login from './pages/Login';
 import Register from './pages/Register';
+import ForgotPassword from './pages/ForgotPassword';
 import Dashboard from './pages/Dashboard';
 import GrantsPage from './pages/GrantsPage';
 import CPDPage from './pages/CPDPage';
 import AnnouncementsPage from './pages/AnnouncementsPage';
+import SettingsPage from './pages/SettingsPage';
+import { TermsOfUse, PrivacyPolicy } from './pages/LegalPage';
 import PlaceholderPage from './pages/PlaceholderPage';
 
 import {
   FlaskConical, BookOpen, Lightbulb, Link2,
-  Building2, TrendingUp, Users, FileText, Settings
+  Building2, TrendingUp, Users, FileText
 } from 'lucide-react';
 
 export default function App() {
@@ -24,6 +27,9 @@ export default function App() {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/terms" element={<TermsOfUse />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/" element={<Navigate to="/login" replace />} />
 
           <Route
@@ -95,13 +101,7 @@ export default function App() {
                 description="Generate and download reports on research output, grant utilization, publication counts, CPD participation, and ORIC activity summaries."
               />
             } />
-            <Route path="settings" element={
-              <PlaceholderPage
-                title="Settings"
-                icon={Settings}
-                description="Manage your account profile, update contact information, change password, configure notification preferences, and manage privacy settings."
-              />
-            } />
+            <Route path="settings" element={<SettingsPage />} />
           </Route>
 
           <Route path="*" element={<Navigate to="/" replace />} />

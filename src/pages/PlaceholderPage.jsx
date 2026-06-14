@@ -7,11 +7,11 @@ export default function PlaceholderPage({ title, description, icon: Icon, childr
   return (
     <div className="placeholder-page">
       <Link to="/dashboard" className="back-link">
-        <ArrowLeft size={15} /> Back to Dashboard
+        <ArrowLeft size={14} /> Back to Dashboard
       </Link>
-      <div className="placeholder-page__card">
-        <div className="placeholder-page__icon">
-          {Icon ? <Icon size={32} /> : <Construction size={32} />}
+      <div className="placeholder-card">
+        <div className="placeholder-card__icon">
+          {Icon ? <Icon size={28} /> : <Construction size={28} />}
         </div>
         <h1>{title}</h1>
         <p>{description || 'This section is under active development and will be available soon.'}</p>
